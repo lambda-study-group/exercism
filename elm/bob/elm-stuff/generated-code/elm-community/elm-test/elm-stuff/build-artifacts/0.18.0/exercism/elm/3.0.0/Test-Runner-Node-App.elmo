@@ -1,0 +1,221 @@
+var _exercism$elm$Test_Runner_Node_App$defaultRunCount = 100;
+var _exercism$elm$Test_Runner_Node_App$decodeReport = function (decoder) {
+	return A2(
+		_elm_lang$core$Json_Decode$andThen,
+		function (str) {
+			var _p0 = str;
+			switch (_p0) {
+				case 'json':
+					return _elm_lang$core$Json_Decode$succeed(_exercism$elm$Test_Reporter_Reporter$JsonReport);
+				case 'chalk':
+					return _elm_lang$core$Json_Decode$succeed(_exercism$elm$Test_Reporter_Reporter$ChalkReport);
+				case 'junit':
+					return _elm_lang$core$Json_Decode$succeed(_exercism$elm$Test_Reporter_Reporter$JUnitReport);
+				default:
+					return _elm_lang$core$Json_Decode$fail(
+						A2(_elm_lang$core$Basics_ops['++'], 'Invalid --report argument: ', str));
+			}
+		},
+		decoder);
+};
+var _exercism$elm$Test_Runner_Node_App$intFromString = A2(
+	_elm_lang$core$Json_Decode$andThen,
+	function (str) {
+		var _p1 = _elm_lang$core$String$toInt(str);
+		if (_p1.ctor === 'Ok') {
+			return _elm_lang$core$Json_Decode$succeed(_p1._0);
+		} else {
+			return _elm_lang$core$Json_Decode$fail(_p1._0);
+		}
+	},
+	_elm_lang$core$Json_Decode$string);
+var _exercism$elm$Test_Runner_Node_App$decodeInitArgs = function (args) {
+	return A2(
+		_elm_lang$core$Json_Decode$decodeValue,
+		_elm_lang$core$Json_Decode$oneOf(
+			{
+				ctor: '::',
+				_0: _elm_lang$core$Json_Decode$null(
+					{
+						ctor: '_Tuple3',
+						_0: _elm_lang$core$Maybe$Nothing,
+						_1: {ctor: '[]'},
+						_2: _exercism$elm$Test_Reporter_Reporter$ChalkReport
+					}),
+				_1: {
+					ctor: '::',
+					_0: A4(
+						_elm_lang$core$Json_Decode$map3,
+						F3(
+							function (v0, v1, v2) {
+								return {ctor: '_Tuple3', _0: v0, _1: v1, _2: v2};
+							}),
+						A2(
+							_elm_lang$core$Json_Decode$field,
+							'seed',
+							_elm_lang$core$Json_Decode$nullable(_exercism$elm$Test_Runner_Node_App$intFromString)),
+						A2(
+							_elm_lang$core$Json_Decode$field,
+							'paths',
+							_elm_lang$core$Json_Decode$list(_elm_lang$core$Json_Decode$string)),
+						A2(
+							_elm_lang$core$Json_Decode$field,
+							'report',
+							_exercism$elm$Test_Runner_Node_App$decodeReport(_elm_lang$core$Json_Decode$string))),
+					_1: {ctor: '[]'}
+				}
+			}),
+		args);
+};
+var _exercism$elm$Test_Runner_Node_App$timeToNumericSeed = function (time) {
+	return _elm_lang$core$Tuple$first(
+		A2(
+			_mgold$elm_random_pcg$Random_Pcg$step,
+			A2(_mgold$elm_random_pcg$Random_Pcg$int, 100, _mgold$elm_random_pcg$Random_Pcg$maxInt),
+			_mgold$elm_random_pcg$Random_Pcg$initialSeed(
+				_elm_lang$core$Basics$floor(time))));
+};
+var _exercism$elm$Test_Runner_Node_App$InitArgs = F6(
+	function (a, b, c, d, e, f) {
+		return {initialSeed: a, fuzzRuns: b, startTime: c, paths: d, runners: e, report: f};
+	});
+var _exercism$elm$Test_Runner_Node_App$RunnerOptions = F4(
+	function (a, b, c, d) {
+		return {seed: a, runs: b, reporter: c, paths: d};
+	});
+var _exercism$elm$Test_Runner_Node_App$AppOptions = F3(
+	function (a, b, c) {
+		return {init: a, update: b, subscriptions: c};
+	});
+var _exercism$elm$Test_Runner_Node_App$SubMsg = function (a) {
+	return {ctor: 'SubMsg', _0: a};
+};
+var _exercism$elm$Test_Runner_Node_App$subscriptions = F2(
+	function (subs, model) {
+		var _p2 = model;
+		if (_p2.ctor === 'Uninitialized') {
+			return _elm_lang$core$Platform_Sub$none;
+		} else {
+			return A2(
+				_elm_lang$core$Platform_Sub$map,
+				_exercism$elm$Test_Runner_Node_App$SubMsg,
+				subs(_p2._1));
+		}
+	});
+var _exercism$elm$Test_Runner_Node_App$Init = function (a) {
+	return {ctor: 'Init', _0: a};
+};
+var _exercism$elm$Test_Runner_Node_App$Uninitialized = F2(
+	function (a, b) {
+		return {ctor: 'Uninitialized', _0: a, _1: b};
+	});
+var _exercism$elm$Test_Runner_Node_App$Initialized = F2(
+	function (a, b) {
+		return {ctor: 'Initialized', _0: a, _1: b};
+	});
+var _exercism$elm$Test_Runner_Node_App$initOrUpdate = F2(
+	function (msg, maybeModel) {
+		var _p3 = maybeModel;
+		if (_p3.ctor === 'Uninitialized') {
+			var _p9 = _p3._1.runs;
+			var _p4 = msg;
+			if (_p4.ctor === 'Init') {
+				var _p7 = _p4._0;
+				var numericSeed = function () {
+					var _p5 = _p3._1.maybeInitialSeed;
+					if (_p5.ctor === 'Just') {
+						return _p5._0;
+					} else {
+						return _exercism$elm$Test_Runner_Node_App$timeToNumericSeed(_p7);
+					}
+				}();
+				var seed = _mgold$elm_random_pcg$Random_Pcg$initialSeed(numericSeed);
+				var runners = A3(_elm_community$elm_test$Test_Runner$fromTest, _p9, seed, _p3._1.test);
+				var _p6 = _p3._1.init(
+					{initialSeed: numericSeed, fuzzRuns: _p9, paths: _p3._1.paths, startTime: _p7, runners: runners, report: _p3._1.report});
+				var subModel = _p6._0;
+				var subCmd = _p6._1;
+				return {
+					ctor: '_Tuple2',
+					_0: A2(_exercism$elm$Test_Runner_Node_App$Initialized, _p3._0, subModel),
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _exercism$elm$Test_Runner_Node_App$SubMsg, subCmd)
+				};
+			} else {
+				return _elm_lang$core$Native_Utils.crashCase(
+					'Test.Runner.Node.App',
+					{
+						start: {line: 62, column: 13},
+						end: {line: 92, column: 70}
+					},
+					_p4)('Attempted to run a SubMsg pre-Init!');
+			}
+		} else {
+			var _p13 = _p3._0;
+			var _p10 = msg;
+			if (_p10.ctor === 'SubMsg') {
+				var _p11 = A2(_p13, _p10._0, _p3._1);
+				var newModel = _p11._0;
+				var cmd = _p11._1;
+				return {
+					ctor: '_Tuple2',
+					_0: A2(_exercism$elm$Test_Runner_Node_App$Initialized, _p13, newModel),
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _exercism$elm$Test_Runner_Node_App$SubMsg, cmd)
+				};
+			} else {
+				return _elm_lang$core$Native_Utils.crashCase(
+					'Test.Runner.Node.App',
+					{
+						start: {line: 95, column: 13},
+						end: {line: 104, column: 59}
+					},
+					_p10)('Attempted to init twice!');
+			}
+		}
+	});
+var _exercism$elm$Test_Runner_Node_App$run = F3(
+	function (_p14, appOpts, test) {
+		var _p15 = _p14;
+		var init = function (args) {
+			var report = function () {
+				var _p16 = _p15.reporter;
+				if (_p16.ctor === 'Nothing') {
+					return _exercism$elm$Test_Reporter_Reporter$ChalkReport;
+				} else {
+					var _p17 = _exercism$elm$Test_Reporter_Reporter$fromString(_p16._0);
+					if (_p17.ctor === 'Ok') {
+						return _p17._0;
+					} else {
+						return _elm_lang$core$Native_Utils.crashCase(
+							'Test.Runner.Node.App',
+							{
+								start: {line: 205, column: 29},
+								end: {line: 210, column: 52}
+							},
+							_p17)(_p17._0);
+					}
+				}
+			}();
+			var cmd = A2(_elm_lang$core$Task$perform, _exercism$elm$Test_Runner_Node_App$Init, _elm_lang$core$Time$now);
+			return {
+				ctor: '_Tuple2',
+				_0: A2(
+					_exercism$elm$Test_Runner_Node_App$Uninitialized,
+					appOpts.update,
+					{
+						maybeInitialSeed: _p15.seed,
+						report: report,
+						runs: A2(_elm_lang$core$Maybe$withDefault, _exercism$elm$Test_Runner_Node_App$defaultRunCount, _p15.runs),
+						paths: _p15.paths,
+						test: test,
+						init: appOpts.init
+					}),
+				_1: cmd
+			};
+		};
+		return _elm_lang$core$Platform$programWithFlags(
+			{
+				init: init,
+				update: _exercism$elm$Test_Runner_Node_App$initOrUpdate,
+				subscriptions: _exercism$elm$Test_Runner_Node_App$subscriptions(appOpts.subscriptions)
+			});
+	});

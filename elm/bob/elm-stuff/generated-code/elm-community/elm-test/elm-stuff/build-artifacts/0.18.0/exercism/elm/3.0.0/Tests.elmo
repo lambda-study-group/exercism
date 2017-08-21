@@ -1,0 +1,301 @@
+var _exercism$elm$Tests$listOfCharacters = F2(
+	function (length, characterList) {
+		return A2(_elm_lang$core$Random$list, length, characterList);
+	});
+var _exercism$elm$Tests$gibberish = F2(
+	function (length, characterList) {
+		return _elm_lang$core$Tuple$first(
+			A2(
+				_elm_lang$core$Random$step,
+				A2(
+					_elm_lang$core$Random$map,
+					_elm_lang$core$String$fromList,
+					A2(_exercism$elm$Tests$listOfCharacters, length, characterList)),
+				_elm_lang$core$Random$initialSeed(424242)));
+	});
+var _exercism$elm$Tests$character = F2(
+	function (start, end) {
+		return A2(
+			_elm_lang$core$Random$map,
+			_elm_lang$core$Char$fromCode,
+			A2(_elm_lang$core$Random$int, start, end));
+	});
+var _exercism$elm$Tests$anyCharacter = A2(_exercism$elm$Tests$character, 32, 126);
+var _exercism$elm$Tests$gibberishQuestion = function (length) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		A2(_exercism$elm$Tests$gibberish, length, _exercism$elm$Tests$anyCharacter),
+		'?');
+};
+var _exercism$elm$Tests$uppercaseCharacter = A2(_exercism$elm$Tests$character, 65, 90);
+var _exercism$elm$Tests$uppercaseGibberish = function (length) {
+	return A2(_exercism$elm$Tests$gibberish, length, _exercism$elm$Tests$uppercaseCharacter);
+};
+var _exercism$elm$Tests$tests = A2(
+	_elm_community$elm_test$Test$describe,
+	'Bob',
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_community$elm_test$Test$test,
+			'stating something',
+			function (_p0) {
+				var _p1 = _p0;
+				return A2(
+					_elm_community$elm_test$Expect$equal,
+					'Whatever.',
+					_exercism$elm$Bob$hey('Tom-ay-to, tom-aaaah-to.'));
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_community$elm_test$Test$test,
+				'shouting',
+				function (_p2) {
+					var _p3 = _p2;
+					return A2(
+						_elm_community$elm_test$Expect$equal,
+						'Whoa, chill out!',
+						_exercism$elm$Bob$hey('WATCH OUT!'));
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_community$elm_test$Test$test,
+					'shouting gibberish',
+					function (_p4) {
+						var _p5 = _p4;
+						return A2(
+							_elm_community$elm_test$Expect$equal,
+							'Whoa, chill out!',
+							_exercism$elm$Bob$hey(
+								_exercism$elm$Tests$uppercaseGibberish(10)));
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_community$elm_test$Test$test,
+						'asking a question',
+						function (_p6) {
+							var _p7 = _p6;
+							return A2(
+								_elm_community$elm_test$Expect$equal,
+								'Sure.',
+								_exercism$elm$Bob$hey('Does this cryogenic chamber make me look fat?'));
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_community$elm_test$Test$test,
+							'asking a numeric question',
+							function (_p8) {
+								var _p9 = _p8;
+								return A2(
+									_elm_community$elm_test$Expect$equal,
+									'Sure.',
+									_exercism$elm$Bob$hey('You are, what, like 15?'));
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_community$elm_test$Test$test,
+								'asking gibberish',
+								function (_p10) {
+									var _p11 = _p10;
+									return A2(
+										_elm_community$elm_test$Expect$equal,
+										'Sure.',
+										_exercism$elm$Bob$hey(
+											_exercism$elm$Tests$gibberishQuestion(20)));
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_community$elm_test$Test$test,
+									'talking forcefully',
+									function (_p12) {
+										var _p13 = _p12;
+										return A2(
+											_elm_community$elm_test$Expect$equal,
+											'Whatever.',
+											_exercism$elm$Bob$hey('Let\'s go make out behind the gym!'));
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_community$elm_test$Test$test,
+										'using acronyms in regular speech',
+										function (_p14) {
+											var _p15 = _p14;
+											return A2(
+												_elm_community$elm_test$Expect$equal,
+												'Whatever.',
+												_exercism$elm$Bob$hey('It\'s OK if you don\'t want to go to the DMV.'));
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_community$elm_test$Test$test,
+											'forceful questions',
+											function (_p16) {
+												var _p17 = _p16;
+												return A2(
+													_elm_community$elm_test$Expect$equal,
+													'Whoa, chill out!',
+													_exercism$elm$Bob$hey('WHAT THE HELL WERE YOU THINKING?'));
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_community$elm_test$Test$test,
+												'shouting numbers',
+												function (_p18) {
+													var _p19 = _p18;
+													return A2(
+														_elm_community$elm_test$Expect$equal,
+														'Whoa, chill out!',
+														_exercism$elm$Bob$hey('1, 2, 3 GO!'));
+												}),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_community$elm_test$Test$test,
+													'only numbers',
+													function (_p20) {
+														var _p21 = _p20;
+														return A2(
+															_elm_community$elm_test$Expect$equal,
+															'Whatever.',
+															_exercism$elm$Bob$hey('1, 2, 3'));
+													}),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_community$elm_test$Test$test,
+														'question with only numbers',
+														function (_p22) {
+															var _p23 = _p22;
+															return A2(
+																_elm_community$elm_test$Expect$equal,
+																'Sure.',
+																_exercism$elm$Bob$hey('4?'));
+														}),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_elm_community$elm_test$Test$test,
+															'shouting with special characters',
+															function (_p24) {
+																var _p25 = _p24;
+																return A2(
+																	_elm_community$elm_test$Expect$equal,
+																	'Whoa, chill out!',
+																	_exercism$elm$Bob$hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!'));
+															}),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_elm_community$elm_test$Test$test,
+																'shouting with no exclamation mark',
+																function (_p26) {
+																	var _p27 = _p26;
+																	return A2(
+																		_elm_community$elm_test$Expect$equal,
+																		'Whoa, chill out!',
+																		_exercism$elm$Bob$hey('I HATE YOU'));
+																}),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_elm_community$elm_test$Test$test,
+																	'statement containing a question mark',
+																	function (_p28) {
+																		var _p29 = _p28;
+																		return A2(
+																			_elm_community$elm_test$Expect$equal,
+																			'Whatever.',
+																			_exercism$elm$Bob$hey('Ending with ? means a question.'));
+																	}),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_elm_community$elm_test$Test$test,
+																		'prattling on',
+																		function (_p30) {
+																			var _p31 = _p30;
+																			return A2(
+																				_elm_community$elm_test$Expect$equal,
+																				'Sure.',
+																				_exercism$elm$Bob$hey('Wait! Hang on. Are you going to be OK?'));
+																		}),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_elm_community$elm_test$Test$test,
+																			'silence',
+																			function (_p32) {
+																				var _p33 = _p32;
+																				return A2(
+																					_elm_community$elm_test$Expect$equal,
+																					'Fine. Be that way!',
+																					_exercism$elm$Bob$hey(''));
+																			}),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_elm_community$elm_test$Test$test,
+																				'prolonged silence',
+																				function (_p34) {
+																					var _p35 = _p34;
+																					return A2(
+																						_elm_community$elm_test$Expect$equal,
+																						'Fine. Be that way!',
+																						_exercism$elm$Bob$hey('       '));
+																				}),
+																			_1: {
+																				ctor: '::',
+																				_0: _elm_community$elm_test$Test$skip(
+																					A2(
+																						_elm_community$elm_test$Test$test,
+																						'alternate silences',
+																						function (_p36) {
+																							var _p37 = _p36;
+																							return A2(
+																								_elm_community$elm_test$Expect$equal,
+																								'Fine. Be that way!',
+																								_exercism$elm$Bob$hey('\t  \n  \t   '));
+																						})),
+																				_1: {
+																					ctor: '::',
+																					_0: _elm_community$elm_test$Test$skip(
+																						A2(
+																							_elm_community$elm_test$Test$test,
+																							'on multiple line questions',
+																							function (_p38) {
+																								var _p39 = _p38;
+																								return A2(
+																									_elm_community$elm_test$Expect$equal,
+																									'Whatever.',
+																									_exercism$elm$Bob$hey('\nDoes this cryogenic chamber make me look fat?\nno'));
+																							})),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
