@@ -254,30 +254,28 @@ var _exercism$elm$Tests$tests = A2(
 																				}),
 																			_1: {
 																				ctor: '::',
-																				_0: _elm_community$elm_test$Test$skip(
-																					A2(
-																						_elm_community$elm_test$Test$test,
-																						'alternate silences',
-																						function (_p36) {
-																							var _p37 = _p36;
-																							return A2(
-																								_elm_community$elm_test$Expect$equal,
-																								'Fine. Be that way!',
-																								_exercism$elm$Bob$hey('\t  \n  \t   '));
-																						})),
+																				_0: A2(
+																					_elm_community$elm_test$Test$test,
+																					'alternate silences',
+																					function (_p36) {
+																						var _p37 = _p36;
+																						return A2(
+																							_elm_community$elm_test$Expect$equal,
+																							'Fine. Be that way!',
+																							_exercism$elm$Bob$hey('\t  \n  \t   '));
+																					}),
 																				_1: {
 																					ctor: '::',
-																					_0: _elm_community$elm_test$Test$skip(
-																						A2(
-																							_elm_community$elm_test$Test$test,
-																							'on multiple line questions',
-																							function (_p38) {
-																								var _p39 = _p38;
-																								return A2(
-																									_elm_community$elm_test$Expect$equal,
-																									'Whatever.',
-																									_exercism$elm$Bob$hey('\nDoes this cryogenic chamber make me look fat?\nno'));
-																							})),
+																					_0: A2(
+																						_elm_community$elm_test$Test$test,
+																						'on multiple line questions',
+																						function (_p38) {
+																							var _p39 = _p38;
+																							return A2(
+																								_elm_community$elm_test$Expect$equal,
+																								'Whatever.',
+																								_exercism$elm$Bob$hey('\nDoes this cryogenic chamber make me look fat?\nno'));
+																						}),
 																					_1: {ctor: '[]'}
 																				}
 																			}

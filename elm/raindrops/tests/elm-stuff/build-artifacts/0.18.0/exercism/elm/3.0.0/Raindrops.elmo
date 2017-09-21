@@ -1,0 +1,18 @@
+var _exercism$elm$Raindrops$plingify = function (factors) {
+	return '1';
+};
+var _exercism$elm$Raindrops$isFactor = F2(
+	function (n, factor) {
+		return _elm_lang$core$Native_Utils.eq(
+			A2(_elm_lang$core$Basics_ops['%'], factor, n),
+			0) ? true : false;
+	});
+var _exercism$elm$Raindrops$raindrops = function (n) {
+	var maxFactor = (n / 2) | 0;
+	var digitFactor = _exercism$elm$Raindrops$isFactor(n);
+	return _exercism$elm$Raindrops$plingify(
+		A2(
+			_elm_lang$core$List$filter,
+			digitFactor,
+			A2(_elm_lang$core$List$range, 1, maxFactor)));
+};

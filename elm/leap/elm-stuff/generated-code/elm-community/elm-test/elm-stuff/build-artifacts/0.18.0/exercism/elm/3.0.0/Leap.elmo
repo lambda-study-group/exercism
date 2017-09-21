@@ -1,0 +1,12 @@
+var _exercism$elm$Leap$divisible = F2(
+	function (divisor, year) {
+		return _elm_lang$core$Native_Utils.eq(
+			A2(_elm_lang$core$Basics$rem, year, divisor),
+			0);
+	});
+var _exercism$elm$Leap$divBy4 = _exercism$elm$Leap$divisible(4);
+var _exercism$elm$Leap$divBy100 = _exercism$elm$Leap$divisible(100);
+var _exercism$elm$Leap$divBy400 = _exercism$elm$Leap$divisible(400);
+var _exercism$elm$Leap$isLeapYear = function (year) {
+	return ((_exercism$elm$Leap$divBy4(year) && (!_exercism$elm$Leap$divBy100(year))) || _exercism$elm$Leap$divBy400(year)) ? true : false;
+};

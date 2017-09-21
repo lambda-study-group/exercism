@@ -6,11 +6,17 @@ var _exercism$elm$Bob$shouting = function (text) {
 var _exercism$elm$Bob$question = function (text) {
 	return A2(_elm_lang$core$String$endsWith, '?', text);
 };
+var _exercism$elm$Bob$notOnlyNumbers = function (text) {
+	return A2(
+		_elm_lang$core$Regex$contains,
+		_elm_lang$core$Regex$regex('[A-Za-z]+'),
+		text);
+};
 var _exercism$elm$Bob$silent = function (text) {
 	return _elm_lang$core$Native_Utils.eq(
 		_elm_lang$core$String$trim(text),
 		'');
 };
 var _exercism$elm$Bob$hey = function (msg) {
-	return _exercism$elm$Bob$silent(msg) ? 'Fine. Be that way!' : (_exercism$elm$Bob$shouting(msg) ? 'Whoa, chill out!' : (_exercism$elm$Bob$question(msg) ? 'Sure.' : 'Whatever.'));
+	return _exercism$elm$Bob$silent(msg) ? 'Fine. Be that way!' : ((_exercism$elm$Bob$shouting(msg) && _exercism$elm$Bob$notOnlyNumbers(msg)) ? 'Whoa, chill out!' : (_exercism$elm$Bob$question(msg) ? 'Sure.' : 'Whatever.'));
 };

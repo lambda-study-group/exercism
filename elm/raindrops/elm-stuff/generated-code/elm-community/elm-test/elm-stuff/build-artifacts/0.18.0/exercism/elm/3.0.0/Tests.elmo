@@ -1,0 +1,213 @@
+var _exercism$elm$Tests$tests = A2(
+	_elm_community$elm_test$Test$describe,
+	'Raindrops',
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_community$elm_test$Test$test,
+			'1',
+			function (_p0) {
+				var _p1 = _p0;
+				return A2(
+					_elm_community$elm_test$Expect$equal,
+					'1',
+					_exercism$elm$Raindrops$raindrops(1));
+			}),
+		_1: {
+			ctor: '::',
+			_0: _elm_community$elm_test$Test$skip(
+				A2(
+					_elm_community$elm_test$Test$test,
+					'3',
+					function (_p2) {
+						var _p3 = _p2;
+						return A2(
+							_elm_community$elm_test$Expect$equal,
+							'Pling',
+							_exercism$elm$Raindrops$raindrops(3));
+					})),
+			_1: {
+				ctor: '::',
+				_0: _elm_community$elm_test$Test$skip(
+					A2(
+						_elm_community$elm_test$Test$test,
+						'5',
+						function (_p4) {
+							var _p5 = _p4;
+							return A2(
+								_elm_community$elm_test$Expect$equal,
+								'Plang',
+								_exercism$elm$Raindrops$raindrops(5));
+						})),
+				_1: {
+					ctor: '::',
+					_0: _elm_community$elm_test$Test$skip(
+						A2(
+							_elm_community$elm_test$Test$test,
+							'7',
+							function (_p6) {
+								var _p7 = _p6;
+								return A2(
+									_elm_community$elm_test$Expect$equal,
+									'Plong',
+									_exercism$elm$Raindrops$raindrops(7));
+							})),
+					_1: {
+						ctor: '::',
+						_0: _elm_community$elm_test$Test$skip(
+							A2(
+								_elm_community$elm_test$Test$test,
+								'6',
+								function (_p8) {
+									var _p9 = _p8;
+									return A2(
+										_elm_community$elm_test$Expect$equal,
+										'Pling',
+										_exercism$elm$Raindrops$raindrops(6));
+								})),
+						_1: {
+							ctor: '::',
+							_0: _elm_community$elm_test$Test$skip(
+								A2(
+									_elm_community$elm_test$Test$test,
+									'9',
+									function (_p10) {
+										var _p11 = _p10;
+										return A2(
+											_elm_community$elm_test$Expect$equal,
+											'Pling',
+											_exercism$elm$Raindrops$raindrops(9));
+									})),
+							_1: {
+								ctor: '::',
+								_0: _elm_community$elm_test$Test$skip(
+									A2(
+										_elm_community$elm_test$Test$test,
+										'10',
+										function (_p12) {
+											var _p13 = _p12;
+											return A2(
+												_elm_community$elm_test$Expect$equal,
+												'Plang',
+												_exercism$elm$Raindrops$raindrops(10));
+										})),
+								_1: {
+									ctor: '::',
+									_0: _elm_community$elm_test$Test$skip(
+										A2(
+											_elm_community$elm_test$Test$test,
+											'14',
+											function (_p14) {
+												var _p15 = _p14;
+												return A2(
+													_elm_community$elm_test$Expect$equal,
+													'Plong',
+													_exercism$elm$Raindrops$raindrops(14));
+											})),
+									_1: {
+										ctor: '::',
+										_0: _elm_community$elm_test$Test$skip(
+											A2(
+												_elm_community$elm_test$Test$test,
+												'15',
+												function (_p16) {
+													var _p17 = _p16;
+													return A2(
+														_elm_community$elm_test$Expect$equal,
+														'PlingPlang',
+														_exercism$elm$Raindrops$raindrops(15));
+												})),
+										_1: {
+											ctor: '::',
+											_0: _elm_community$elm_test$Test$skip(
+												A2(
+													_elm_community$elm_test$Test$test,
+													'21',
+													function (_p18) {
+														var _p19 = _p18;
+														return A2(
+															_elm_community$elm_test$Expect$equal,
+															'PlingPlong',
+															_exercism$elm$Raindrops$raindrops(21));
+													})),
+											_1: {
+												ctor: '::',
+												_0: _elm_community$elm_test$Test$skip(
+													A2(
+														_elm_community$elm_test$Test$test,
+														'25',
+														function (_p20) {
+															var _p21 = _p20;
+															return A2(
+																_elm_community$elm_test$Expect$equal,
+																'Plang',
+																_exercism$elm$Raindrops$raindrops(25));
+														})),
+												_1: {
+													ctor: '::',
+													_0: _elm_community$elm_test$Test$skip(
+														A2(
+															_elm_community$elm_test$Test$test,
+															'35',
+															function (_p22) {
+																var _p23 = _p22;
+																return A2(
+																	_elm_community$elm_test$Expect$equal,
+																	'PlangPlong',
+																	_exercism$elm$Raindrops$raindrops(35));
+															})),
+													_1: {
+														ctor: '::',
+														_0: _elm_community$elm_test$Test$skip(
+															A2(
+																_elm_community$elm_test$Test$test,
+																'49',
+																function (_p24) {
+																	var _p25 = _p24;
+																	return A2(
+																		_elm_community$elm_test$Expect$equal,
+																		'Plong',
+																		_exercism$elm$Raindrops$raindrops(49));
+																})),
+														_1: {
+															ctor: '::',
+															_0: _elm_community$elm_test$Test$skip(
+																A2(
+																	_elm_community$elm_test$Test$test,
+																	'52',
+																	function (_p26) {
+																		var _p27 = _p26;
+																		return A2(
+																			_elm_community$elm_test$Expect$equal,
+																			'52',
+																			_exercism$elm$Raindrops$raindrops(52));
+																	})),
+															_1: {
+																ctor: '::',
+																_0: _elm_community$elm_test$Test$skip(
+																	A2(
+																		_elm_community$elm_test$Test$test,
+																		'105',
+																		function (_p28) {
+																			var _p29 = _p28;
+																			return A2(
+																				_elm_community$elm_test$Expect$equal,
+																				'PlingPlangPlong',
+																				_exercism$elm$Raindrops$raindrops(105));
+																		})),
+																_1: {ctor: '[]'}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});

@@ -1,0 +1,35 @@
+var _exercism$elm$Test_Reporter_Reporter$TestReporter = F4(
+	function (a, b, c, d) {
+		return {format: a, reportBegin: b, reportComplete: c, reportSummary: d};
+	});
+var _exercism$elm$Test_Reporter_Reporter$createReporter = function (report) {
+	var _p0 = report;
+	switch (_p0.ctor) {
+		case 'JsonReport':
+			return A4(_exercism$elm$Test_Reporter_Reporter$TestReporter, 'JSON', _exercism$elm$Test_Reporter_Json$reportBegin, _exercism$elm$Test_Reporter_Json$reportComplete, _exercism$elm$Test_Reporter_Json$reportSummary);
+		case 'ChalkReport':
+			return A4(_exercism$elm$Test_Reporter_Reporter$TestReporter, 'CHALK', _exercism$elm$Test_Reporter_Chalk$reportBegin, _exercism$elm$Test_Reporter_Chalk$reportComplete, _exercism$elm$Test_Reporter_Chalk$reportSummary);
+		default:
+			return A4(_exercism$elm$Test_Reporter_Reporter$TestReporter, 'JUNIT', _exercism$elm$Test_Reporter_JUnit$reportBegin, _exercism$elm$Test_Reporter_JUnit$reportComplete, _exercism$elm$Test_Reporter_JUnit$reportSummary);
+	}
+};
+var _exercism$elm$Test_Reporter_Reporter$JUnitReport = {ctor: 'JUnitReport'};
+var _exercism$elm$Test_Reporter_Reporter$JsonReport = {ctor: 'JsonReport'};
+var _exercism$elm$Test_Reporter_Reporter$ChalkReport = {ctor: 'ChalkReport'};
+var _exercism$elm$Test_Reporter_Reporter$fromString = function (str) {
+	var _p1 = _elm_lang$core$String$toLower(str);
+	switch (_p1) {
+		case 'chalk':
+			return _elm_lang$core$Result$Ok(_exercism$elm$Test_Reporter_Reporter$ChalkReport);
+		case 'json':
+			return _elm_lang$core$Result$Ok(_exercism$elm$Test_Reporter_Reporter$JsonReport);
+		case 'junit':
+			return _elm_lang$core$Result$Ok(_exercism$elm$Test_Reporter_Reporter$JUnitReport);
+		default:
+			return _elm_lang$core$Result$Err(
+				A2(
+					_elm_lang$core$Basics_ops['++'],
+					'Unrecognized report type: ',
+					_elm_lang$core$Basics$toString(str)));
+	}
+};
