@@ -1,0 +1,28 @@
+Configuring hspec-core-2.4.3...
+Building hspec-core-2.4.3...
+Preprocessing library hspec-core-2.4.3...
+[ 1 of 22] Compiling Test.Hspec.Core.Timer ( src/Test/Hspec/Core/Timer.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Timer.o )
+[ 2 of 22] Compiling Test.Hspec.Core.Compat ( src/Test/Hspec/Core/Compat.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Compat.o )
+[ 3 of 22] Compiling Test.Hspec.Core.Formatters.Free ( src/Test/Hspec/Core/Formatters/Free.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Formatters/Free.o )
+[ 4 of 22] Compiling Test.Hspec.Core.Util ( src/Test/Hspec/Core/Util.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Util.o )
+[ 5 of 22] Compiling Test.Hspec.Core.QuickCheckUtil ( src/Test/Hspec/Core/QuickCheckUtil.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/QuickCheckUtil.o )
+[ 6 of 22] Compiling Test.Hspec.Core.Example ( src/Test/Hspec/Core/Example.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Example.o )
+[ 7 of 22] Compiling Test.Hspec.Core.Tree ( src/Test/Hspec/Core/Tree.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Tree.o )
+[ 8 of 22] Compiling Test.Hspec.Core.Spec.Monad ( src/Test/Hspec/Core/Spec/Monad.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Spec/Monad.o )
+[ 9 of 22] Compiling Test.Hspec.Core.Hooks ( src/Test/Hspec/Core/Hooks.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Hooks.o )
+[10 of 22] Compiling Test.Hspec.Core.Spec ( src/Test/Hspec/Core/Spec.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Spec.o )
+[11 of 22] Compiling Test.Hspec.Core.Formatters.Monad ( src/Test/Hspec/Core/Formatters/Monad.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Formatters/Monad.o )
+[12 of 22] Compiling Test.Hspec.Core.Formatters.Internal ( src/Test/Hspec/Core/Formatters/Internal.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Formatters/Internal.o )
+[13 of 22] Compiling Test.Hspec.Core.QuickCheck ( src/Test/Hspec/Core/QuickCheck.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/QuickCheck.o )
+[14 of 22] Compiling Paths_hspec_core ( .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/autogen/Paths_hspec_core.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Paths_hspec_core.o )
+[15 of 22] Compiling Data.Algorithm.Diff ( vendor/Data/Algorithm/Diff.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Data/Algorithm/Diff.o )
+[16 of 22] Compiling Test.Hspec.Core.Formatters.Diff ( src/Test/Hspec/Core/Formatters/Diff.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Formatters/Diff.o )
+[17 of 22] Compiling Test.Hspec.Core.Formatters ( src/Test/Hspec/Core/Formatters.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Formatters.o )
+[18 of 22] Compiling Test.Hspec.Core.Options ( src/Test/Hspec/Core/Options.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Options.o )
+[19 of 22] Compiling Test.Hspec.Core.FailureReport ( src/Test/Hspec/Core/FailureReport.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/FailureReport.o )
+[20 of 22] Compiling Test.Hspec.Core.Config ( src/Test/Hspec/Core/Config.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Config.o )
+[21 of 22] Compiling Test.Hspec.Core.Runner.Eval ( src/Test/Hspec/Core/Runner/Eval.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Runner/Eval.o )
+[22 of 22] Compiling Test.Hspec.Core.Runner ( src/Test/Hspec/Core/Runner.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core/Runner.o )
+Installing library in
+/Users/kasper/.stack/snapshots/x86_64-osx/lts-8.21/8.0.2/lib/x86_64-osx-ghc-8.0.2/hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp
+Registering hspec-core-2.4.3...

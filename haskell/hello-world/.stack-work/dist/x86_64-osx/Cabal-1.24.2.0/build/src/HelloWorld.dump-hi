@@ -1,0 +1,52 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-26 16:26:56.684423 UTC
+
+interface hello-world-1.0.0.3-4Hwoq4xyDaD21cstOJFHJZ:HelloWorld 8002
+  interface hash: a4b23a5f388018c62c1b5ef271a9c560
+  ABI hash: 40a5731b2118a201c911603321064c01
+  export-list hash: f72fa429a43f4b4c760ca3209c5b1db6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HelloWorld.hello
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+214e1a743774f5692c97378b8b7155f4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HelloWorld.$trModule2
+                   HelloWorld.$trModule1) -}
+dce9ef4541ef5197a66b4896c579a5e3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "HelloWorld"#) -}
+d445bd6fbb11aab13c270d4f739a610f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hello-world-1.0.0.3-4Hwoq4xyDaD21cstOJFHJZ"#) -}
+253140e584bb91bc93ad1d2fb5463db2
+  hello :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "Hello, World!"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
