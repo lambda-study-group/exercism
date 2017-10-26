@@ -1,0 +1,14 @@
+Configuring hspec-2.4.3...
+Building hspec-2.4.3...
+Preprocessing library hspec-2.4.3...
+[1 of 8] Compiling Test.Hspec.Runner ( src/Test/Hspec/Runner.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Runner.o )
+[2 of 8] Compiling Test.Hspec.HUnit ( src/Test/Hspec/HUnit.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/HUnit.o )
+[3 of 8] Compiling Test.Hspec.Formatters ( src/Test/Hspec/Formatters.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Formatters.o )
+[4 of 8] Compiling Test.Hspec.Discover ( src/Test/Hspec/Discover.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Discover.o )
+[5 of 8] Compiling Test.Hspec.Core  ( src/Test/Hspec/Core.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/Core.o )
+[6 of 8] Compiling Test.Hspec       ( src/Test/Hspec.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec.o )
+[7 of 8] Compiling Test.Hspec.QuickCheck ( src/Test/Hspec/QuickCheck.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Test/Hspec/QuickCheck.o )
+[8 of 8] Compiling Paths_hspec      ( .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/autogen/Paths_hspec.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Paths_hspec.o )
+Installing library in
+/Users/kasper/.stack/snapshots/x86_64-osx/lts-8.21/8.0.2/lib/x86_64-osx-ghc-8.0.2/hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh
+Registering hspec-2.4.3...
