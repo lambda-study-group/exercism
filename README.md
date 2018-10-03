@@ -1,19 +1,15 @@
 ## Exercism
+Exercism exercises in functional programming languages like Clojure, Elixir, Elm, Haskell Scala, Lisp, Erlang, Purescript, F# or Scheme.
 
-Exercicios resolvidos pelo Exercism em linguagens funcionais como Clojure, Elixir, Elm, Haskell Scala, Lisp, Erlang, Purescript, F# ou Scheme.
+## Folder structure
 
-## Estrutura
+* name_of_the_language
+    * name_of_the_exercise
 
-Ficando com uma estrutura assim:
+The exercise folder should contain a README.md and the souce code.
 
-* nome_da_lang
-    * pasta_do_exercicio_do_exercism
+In case there's already a solution just change the name of the folder:
 
-Caso já tem uma resolução do mesmo exercicio ficaria algo como:
-
-* nome_da_lang
-    * pasta_do_exercicio_do_exercism_2
-
-## Pq seria legal?
-
-Todos os exercicios do exercism podem ser resolvidos de maneiras diferentes e podemos comentar e se ajudar na resolução dos exercicios.
+* name_of_the_language
+    * foobar
+    * foobar_2
