@@ -1,0 +1,34 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 01bc321733b02d119c611e56890f99b4915aff04b72ed149793120ce7832c1a2
+
+name:           bracket-push
+version:        1.3.0.4
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      Brackets
+  other-modules:
+      Paths_bracket_push
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_bracket_push
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , bracket-push
+    , hspec
+  default-language: Haskell2010

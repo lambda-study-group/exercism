@@ -1,0 +1,20 @@
+name: pangram
+version: 1.4.1.7
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Pangram
+  source-dirs: src
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - pangram
+      - hspec
