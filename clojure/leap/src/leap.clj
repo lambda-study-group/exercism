@@ -1,7 +1,9 @@
 (ns leap)
 
+(defn- divisible? [n divisor]
+  (= 0 (rem n divisor)))
+
 (defn leap-year? [y]
-  (when (= 0 (rem y 4))
-    (if-not (and (= 0 (rem y 100))
-                 (not= 0 (rem y 400)))
-      true)))
+  (and (divisible? y 4)
+       (or (divisible? y 400)
+           (not (divisible? y 100)))))
