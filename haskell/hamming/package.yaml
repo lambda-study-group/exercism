@@ -1,0 +1,20 @@
+name: hamming
+version: 2.1.0.6
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Hamming
+  source-dirs: src
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - hamming
+      - hspec
