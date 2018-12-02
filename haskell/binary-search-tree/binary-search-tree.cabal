@@ -1,0 +1,34 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c7fac3c167c399dd6e27f4feefadb93bed019a1c4c52c9e7c184459fd74ab6f6
+
+name:           binary-search-tree
+version:        1.0.0.3
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      BST
+  other-modules:
+      Paths_binary_search_tree
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_binary_search_tree
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , binary-search-tree
+    , hspec
+  default-language: Haskell2010
