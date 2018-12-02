@@ -1,3 +1,4 @@
+### Haskell ###
 dist
 dist-*
 cabal-dev
@@ -17,5 +18,9 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
+cabal.project.local~
 .HTF/
+.ghc.environment.*
+
+### Elm ###
 elm-stuff/
