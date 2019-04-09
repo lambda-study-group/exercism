@@ -1,0 +1,47 @@
+2019-04-09T05:57:13+00:00 antergos#00 I: Runner: processes
+2019-04-09T05:57:13+00:00 antergos#00 I: Chooser: simple
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration suite_name = "Hello World tests"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration cache_filename = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/hello-world/_build/oUnit-$(suite_name).cache"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration display = "true"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration results_style_1_X = "false"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration verbose = "false"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration health_check_interval = "1."
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration testdata_dir = "none"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration chooser = "simple"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration output_html_dir = "none"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration processes_kill_period = "5."
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration runner = "processes"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration shards = "2"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration processes_grace_period = "5."
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration log_encoding = "utf-8"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration output_junit_file = "none"
+2019-04-09T05:57:13+00:00 antergos#00 I: Configuration output_file = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/hello-world/_build/oUnit-$(suite_name)-$(shard_id).log"
+2019-04-09T05:57:13+00:00 antergos#00 I: Using 2 workers maximum.
+2019-04-09T05:57:13+00:00 antergos#00 I: Starting worker number antergos#01.
+2019-04-09T05:57:13+00:00 antergos#00 I: Worker antergos#01 started.
+2019-04-09T05:57:13+00:00 antergos#00 I: Still 1 tests running : Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: 1 tests running: Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#01 I: Start test Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: Still 1 tests running : Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: 1 tests running: Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#01 I: Test Hello World tests:0:Say Hi! is successful.
+2019-04-09T05:57:13+00:00 antergos#00 I: Still 1 tests running : Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: 1 tests running: Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#01 I: End test Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: Still 1 tests running : Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: 1 tests running: Hello World tests:0:Say Hi!.
+2019-04-09T05:57:13+00:00 antergos#00 I: 0 tests running: .
+2019-04-09T05:57:13+00:00 antergos#00 I: Worker antergos#01 has ended.
+2019-04-09T05:57:13+00:00 antergos#00 I: Used 1 worker during test execution.
+2019-04-09T05:57:13+00:00 antergos#00 I: Run 1 tests with shard antergos#01.
+2019-04-09T05:57:13+00:00 antergos#00 I: ==============
+2019-04-09T05:57:13+00:00 antergos#00 I: Summary:
+2019-04-09T05:57:13+00:00 antergos#00 I: Test Hello World tests:0:Say Hi! is successful.
+2019-04-09T05:57:13+00:00 antergos#00 I: Ran: 1 tests in: 0.10 seconds.
+2019-04-09T05:57:13+00:00 antergos#00 I: Cases: 1.
+2019-04-09T05:57:13+00:00 antergos#00 I: Tried: 1.
+2019-04-09T05:57:13+00:00 antergos#00 I: Errors: 0.
+2019-04-09T05:57:13+00:00 antergos#00 I: Failures: 0.
+2019-04-09T05:57:13+00:00 antergos#00 I: Skip: 0.
+2019-04-09T05:57:13+00:00 antergos#00 I: Todo: 0.
+2019-04-09T05:57:13+00:00 antergos#00 I: Timeout: 0.

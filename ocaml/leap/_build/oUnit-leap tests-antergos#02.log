@@ -1,0 +1,6 @@
+2019-04-09T05:57:21+00:00 antergos#02 I: Start test leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Test leap tests:1:year divisible by 4, not divisible by 100: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#02 I: End test leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Start test leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Test leap tests:3:year divisible by 400: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#02 I: End test leap tests:3:year divisible by 400: leap year.

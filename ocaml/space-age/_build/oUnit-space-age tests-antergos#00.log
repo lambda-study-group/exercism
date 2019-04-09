@@ -1,0 +1,94 @@
+2019-04-09T05:57:24+00:00 antergos#00 I: Runner: processes
+2019-04-09T05:57:24+00:00 antergos#00 I: Chooser: simple
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration suite_name = "space-age tests"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration cache_filename = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/space-age/_build/oUnit-$(suite_name).cache"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration display = "true"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration results_style_1_X = "false"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration verbose = "false"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration health_check_interval = "1."
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration testdata_dir = "none"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration chooser = "simple"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration output_html_dir = "none"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration processes_kill_period = "5."
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration runner = "processes"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration shards = "2"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration processes_grace_period = "5."
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration log_encoding = "utf-8"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration output_junit_file = "none"
+2019-04-09T05:57:24+00:00 antergos#00 I: Configuration output_file = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/space-age/_build/oUnit-$(suite_name)-$(shard_id).log"
+2019-04-09T05:57:24+00:00 antergos#00 I: Using 2 workers maximum.
+2019-04-09T05:57:24+00:00 antergos#00 I: Starting worker number antergos#01.
+2019-04-09T05:57:24+00:00 antergos#00 I: Worker antergos#01 started.
+2019-04-09T05:57:24+00:00 antergos#00 I: Starting worker number antergos#02.
+2019-04-09T05:57:24+00:00 antergos#00 I: Worker antergos#02 started.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:1:age on Mercury, space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:1:age on Mercury, space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#02 I: Start test space-age tests:1:age on Mercury.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:1:age on Mercury, space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:0:age on Earth is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:1:age on Mercury, space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#02 I: Test space-age tests:1:age on Mercury is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:1:age on Mercury, space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#02 I: End test space-age tests:1:age on Mercury.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:2:age on Venus, space-age tests:1:age on Mercury.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:3:age on Mars, space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:3:age on Mars, space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#02 I: Start test space-age tests:3:age on Mars.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:3:age on Mars, space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:2:age on Venus is successful.
+2019-04-09T05:57:24+00:00 antergos#02 I: Test space-age tests:3:age on Mars is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:3:age on Mars, space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#02 I: End test space-age tests:3:age on Mars.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:3:age on Mars, space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:5:age on Saturn, space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#02 I: Start test space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:5:age on Saturn.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:5:age on Saturn, space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#02 I: Test space-age tests:4:age on Jupiter is successful.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:5:age on Saturn is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:5:age on Saturn, space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#02 I: End test space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:5:age on Saturn.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:5:age on Saturn, space-age tests:4:age on Jupiter.
+2019-04-09T05:57:24+00:00 antergos#00 I: Still 2 tests running : space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#02 I: Start test space-age tests:7:age on Neptune.
+2019-04-09T05:57:24+00:00 antergos#00 I: Still 2 tests running : space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:6:age on Uranus is successful.
+2019-04-09T05:57:24+00:00 antergos#02 I: Test space-age tests:7:age on Neptune is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Still 2 tests running : space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#02 I: End test space-age tests:7:age on Neptune.
+2019-04-09T05:57:24+00:00 antergos#00 I: Still 2 tests running : space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 2 tests running: space-age tests:7:age on Neptune, space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#00 I: 0 tests running: .
+2019-04-09T05:57:24+00:00 antergos#00 I: Worker antergos#01 has ended.
+2019-04-09T05:57:24+00:00 antergos#00 I: Worker antergos#02 has ended.
+2019-04-09T05:57:24+00:00 antergos#00 I: Used 2 worker during test execution.
+2019-04-09T05:57:24+00:00 antergos#00 I: Run 4 tests with shard antergos#02.
+2019-04-09T05:57:24+00:00 antergos#00 I: Run 4 tests with shard antergos#01.
+2019-04-09T05:57:24+00:00 antergos#00 I: ==============
+2019-04-09T05:57:24+00:00 antergos#00 I: Summary:
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:7:age on Neptune is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:6:age on Uranus is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:5:age on Saturn is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:4:age on Jupiter is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:3:age on Mars is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:2:age on Venus is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:1:age on Mercury is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Test space-age tests:0:age on Earth is successful.
+2019-04-09T05:57:24+00:00 antergos#00 I: Ran: 8 tests in: 0.10 seconds.
+2019-04-09T05:57:24+00:00 antergos#00 I: Cases: 8.
+2019-04-09T05:57:24+00:00 antergos#00 I: Tried: 8.
+2019-04-09T05:57:24+00:00 antergos#00 I: Errors: 0.
+2019-04-09T05:57:24+00:00 antergos#00 I: Failures: 0.
+2019-04-09T05:57:24+00:00 antergos#00 I: Skip: 0.
+2019-04-09T05:57:24+00:00 antergos#00 I: Todo: 0.
+2019-04-09T05:57:24+00:00 antergos#00 I: Timeout: 0.

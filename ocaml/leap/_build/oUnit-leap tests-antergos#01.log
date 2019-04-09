@@ -1,0 +1,9 @@
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:0:year not divisible by 4: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:2:year divisible by 100, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:4:year divisible by 200, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:4:year divisible by 200, not divisible by 400: common year.

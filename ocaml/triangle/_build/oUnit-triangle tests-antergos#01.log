@@ -1,0 +1,27 @@
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:0:true if all sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:0:true if all sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:0:true if all sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:2:false if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:2:false if no sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:2:false if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:4:true if last two sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:4:true if last two sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:4:true if last two sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:6:true if first and last sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:6:true if first and last sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:6:true if first and last sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:7:equilateral triangles are also isosceles.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:7:equilateral triangles are also isosceles is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:7:equilateral triangles are also isosceles.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:9:Sides that violate triangle inequality are not isosceles, even if two are equal (1).
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:9:Sides that violate triangle inequality are not isosceles, even if two are equal (1) is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:9:Sides that violate triangle inequality are not isosceles, even if two are equal (1).
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:11:Sides that violate triangle inequality are not isosceles, even if two are equal (3).
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:11:Sides that violate triangle inequality are not isosceles, even if two are equal (3) is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:11:Sides that violate triangle inequality are not isosceles, even if two are equal (3).
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:13:false if all sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:13:false if all sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:13:false if all sides are equal.
+2019-04-09T05:57:28+00:00 antergos#01 I: Start test triangle tests:15:Sides that violate triangle inequality are not scalene, even if they are all different.
+2019-04-09T05:57:28+00:00 antergos#01 I: Test triangle tests:15:Sides that violate triangle inequality are not scalene, even if they are all different is successful.
+2019-04-09T05:57:28+00:00 antergos#01 I: End test triangle tests:15:Sides that violate triangle inequality are not scalene, even if they are all different.
