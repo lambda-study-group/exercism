@@ -1,0 +1,21 @@
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:1:false if any side is unequal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:1:false if any side is unequal is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:1:false if any side is unequal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:3:All zero sides are illegal, so the triangle is not equilateral.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:3:All zero sides are illegal, so the triangle is not equilateral is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:3:All zero sides are illegal, so the triangle is not equilateral.
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:5:true if first two sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:5:true if first two sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:5:true if first two sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:8:false if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:8:false if no sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:8:false if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:10:Sides that violate triangle inequality are not isosceles, even if two are equal (2).
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:10:Sides that violate triangle inequality are not isosceles, even if two are equal (2) is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:10:Sides that violate triangle inequality are not isosceles, even if two are equal (2).
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:12:true if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:12:true if no sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:12:true if no sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Start test triangle tests:14:false if two sides are equal.
+2019-04-09T05:57:28+00:00 antergos#02 I: Test triangle tests:14:false if two sides are equal is successful.
+2019-04-09T05:57:28+00:00 antergos#02 I: End test triangle tests:14:false if two sides are equal.

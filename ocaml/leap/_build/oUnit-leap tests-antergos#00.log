@@ -1,0 +1,83 @@
+2019-04-09T05:57:21+00:00 antergos#00 I: Runner: processes
+2019-04-09T05:57:21+00:00 antergos#00 I: Chooser: simple
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration suite_name = "leap tests"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration cache_filename = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/leap/_build/oUnit-$(suite_name).cache"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration display = "true"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration results_style_1_X = "false"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration verbose = "false"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration health_check_interval = "1."
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration testdata_dir = "none"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration chooser = "simple"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration output_html_dir = "none"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration processes_kill_period = "5."
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration runner = "processes"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration shards = "2"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration processes_grace_period = "5."
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration log_encoding = "utf-8"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration output_junit_file = "none"
+2019-04-09T05:57:21+00:00 antergos#00 I: Configuration output_file = "/home/eddie/Documents/gitrepos/gh/exercism/ocaml/leap/_build/oUnit-$(suite_name)-$(shard_id).log"
+2019-04-09T05:57:21+00:00 antergos#00 I: Using 2 workers maximum.
+2019-04-09T05:57:21+00:00 antergos#00 I: Starting worker number antergos#01.
+2019-04-09T05:57:21+00:00 antergos#00 I: Worker antergos#01 started.
+2019-04-09T05:57:21+00:00 antergos#00 I: Starting worker number antergos#02.
+2019-04-09T05:57:21+00:00 antergos#00 I: Worker antergos#02 started.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:1:year divisible by 4, not divisible by 100: leap year, leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:1:year divisible by 4, not divisible by 100: leap year, leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Start test leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:1:year divisible by 4, not divisible by 100: leap year, leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:0:year not divisible by 4: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:1:year divisible by 4, not divisible by 100: leap year, leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:1:year divisible by 4, not divisible by 100: leap year, leap tests:0:year not divisible by 4: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:2:year divisible by 100, not divisible by 400: common year, leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Test leap tests:1:year divisible by 4, not divisible by 100: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:2:year divisible by 100, not divisible by 400: common year, leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: End test leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:2:year divisible by 100, not divisible by 400: common year, leap tests:1:year divisible by 4, not divisible by 100: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:3:year divisible by 400: leap year, leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Start test leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:3:year divisible by 400: leap year, leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:2:year divisible by 100, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:3:year divisible by 400: leap year, leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:3:year divisible by 400: leap year, leap tests:2:year divisible by 100, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 2 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: Test leap tests:3:year divisible by 400: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#01 I: Start test leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 2 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#02 I: End test leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 2 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 2 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year, leap tests:3:year divisible by 400: leap year.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 1 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 1 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: Test leap tests:4:year divisible by 200, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 1 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 1 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#01 I: End test leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: Still 1 tests running : leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 1 tests running: leap tests:4:year divisible by 200, not divisible by 400: common year.
+2019-04-09T05:57:21+00:00 antergos#00 I: 0 tests running: .
+2019-04-09T05:57:21+00:00 antergos#00 I: Worker antergos#02 has ended.
+2019-04-09T05:57:21+00:00 antergos#00 I: Worker antergos#01 has ended.
+2019-04-09T05:57:21+00:00 antergos#00 I: Used 2 worker during test execution.
+2019-04-09T05:57:21+00:00 antergos#00 I: Run 2 tests with shard antergos#02.
+2019-04-09T05:57:21+00:00 antergos#00 I: Run 3 tests with shard antergos#01.
+2019-04-09T05:57:21+00:00 antergos#00 I: ==============
+2019-04-09T05:57:21+00:00 antergos#00 I: Summary:
+2019-04-09T05:57:21+00:00 antergos#00 I: Test leap tests:4:year divisible by 200, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Test leap tests:3:year divisible by 400: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Test leap tests:2:year divisible by 100, not divisible by 400: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Test leap tests:1:year divisible by 4, not divisible by 100: leap year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Test leap tests:0:year not divisible by 4: common year is successful.
+2019-04-09T05:57:21+00:00 antergos#00 I: Ran: 5 tests in: 0.10 seconds.
+2019-04-09T05:57:21+00:00 antergos#00 I: Cases: 5.
+2019-04-09T05:57:21+00:00 antergos#00 I: Tried: 5.
+2019-04-09T05:57:21+00:00 antergos#00 I: Errors: 0.
+2019-04-09T05:57:21+00:00 antergos#00 I: Failures: 0.
+2019-04-09T05:57:21+00:00 antergos#00 I: Skip: 0.
+2019-04-09T05:57:21+00:00 antergos#00 I: Todo: 0.
+2019-04-09T05:57:21+00:00 antergos#00 I: Timeout: 0.

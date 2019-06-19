@@ -1,0 +1,12 @@
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:0:age on Earth is successful.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:0:age on Earth.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:2:age on Venus is successful.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:2:age on Venus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:5:age on Saturn.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:5:age on Saturn is successful.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:5:age on Saturn.
+2019-04-09T05:57:24+00:00 antergos#01 I: Start test space-age tests:6:age on Uranus.
+2019-04-09T05:57:24+00:00 antergos#01 I: Test space-age tests:6:age on Uranus is successful.
+2019-04-09T05:57:24+00:00 antergos#01 I: End test space-age tests:6:age on Uranus.

@@ -1,0 +1,18 @@
+EXCLUDE_QUERY_DIR
+B /home/eddie/.opam/4.06.1/lib/base
+B /home/eddie/.opam/4.06.1/lib/base/caml
+B /home/eddie/.opam/4.06.1/lib/base/shadow_stdlib
+B /home/eddie/.opam/4.06.1/lib/bytes
+B /home/eddie/.opam/4.06.1/lib/oUnit
+B /home/eddie/.opam/4.06.1/lib/ocaml
+B /home/eddie/.opam/4.06.1/lib/sexplib0
+B _build/default/.test.eobjs/byte
+S /home/eddie/.opam/4.06.1/lib/base
+S /home/eddie/.opam/4.06.1/lib/base/caml
+S /home/eddie/.opam/4.06.1/lib/base/shadow_stdlib
+S /home/eddie/.opam/4.06.1/lib/bytes
+S /home/eddie/.opam/4.06.1/lib/oUnit
+S /home/eddie/.opam/4.06.1/lib/ocaml
+S /home/eddie/.opam/4.06.1/lib/sexplib0
+S .
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
