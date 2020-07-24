@@ -1,0 +1,15 @@
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\testhost.exe
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\testhost.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\HelloWorld.deps.json
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\HelloWorld.runtimeconfig.json
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\HelloWorld.runtimeconfig.dev.json
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\HelloWorld.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\bin\Debug\netcoreapp2.1\HelloWorld.pdb
+C:\tests\testing\tst\exercism\fsharp\hello-world\obj\Debug\netcoreapp2.1\HelloWorld.fsprojAssemblyReference.cache
+C:\tests\testing\tst\exercism\fsharp\hello-world\obj\Debug\netcoreapp2.1\HelloWorld.AssemblyInfoInputs.cache
+C:\tests\testing\tst\exercism\fsharp\hello-world\obj\Debug\netcoreapp2.1\HelloWorld.AssemblyInfo.fs
+C:\tests\testing\tst\exercism\fsharp\hello-world\obj\Debug\netcoreapp2.1\HelloWorld.dll
+C:\tests\testing\tst\exercism\fsharp\hello-world\obj\Debug\netcoreapp2.1\HelloWorld.pdb

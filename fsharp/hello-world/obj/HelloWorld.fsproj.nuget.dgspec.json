@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\tests\\testing\\tst\\exercism\\fsharp\\hello-world\\HelloWorld.fsproj": {}
+  },
+  "projects": {
+    "C:\\tests\\testing\\tst\\exercism\\fsharp\\hello-world\\HelloWorld.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tests\\testing\\tst\\exercism\\fsharp\\hello-world\\HelloWorld.fsproj",
+        "projectName": "HelloWorld",
+        "projectPath": "C:\\tests\\testing\\tst\\exercism\\fsharp\\hello-world\\HelloWorld.fsproj",
+        "packagesPath": "C:\\Users\\vinicius.cubas\\.nuget\\packages\\",
+        "outputPath": "C:\\tests\\testing\\tst\\exercism\\fsharp\\hello-world\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vinicius.cubas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "FsUnit.xUnit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
