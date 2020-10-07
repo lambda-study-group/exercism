@@ -6,14 +6,14 @@ defmodule AllYourBase do
 
   @spec convert(list, integer, integer) :: list | nil
   def convert(digits, base_a, base_b) do
-    if is_valid?(digits, base_a, base_b) do
-      digits
-      |> convert_to_decimal(base_a)
-      |> convert_to_base(base_b, [])
-    end
+    if valid?(digits, base_a, base_b),
+      do:
+        digits
+        |> convert_to_decimal(base_a)
+        |> convert_to_base(base_b, [])
   end
 
-  defp is_valid?(digits, base_a, base_b) do
+  defp valid?(digits, base_a, base_b) do
     all_digits_in_zero_and_base_a? =
       Enum.all?(digits, fn digit ->
         0 <= digit and digit < base_a
@@ -41,6 +41,7 @@ defmodule AllYourBase do
 
   defp convert_to_base(0, _base, []), do: [0]
   defp convert_to_base(0, _base, acc), do: acc
+
   defp convert_to_base(number, base, acc) do
     {x, y} = {div(number, base), rem(number, base)}
 
