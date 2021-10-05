@@ -18,7 +18,6 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
-cabal.project.local~
 .HTF/
 .ghc.environment.*
 
@@ -59,3 +58,9 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+### Common Lisp ###
+*.fasl
+
+### Emacs ###
+*~

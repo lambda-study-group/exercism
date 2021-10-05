@@ -1,0 +1,91 @@
+# Lucy's Magnificent Mapper
+
+Welcome to Lucy's Magnificent Mapper on Exercism's Common Lisp Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+If you get stuck on the exercise, check out `HINTS.md`, but try and solve it without using those first :)
+
+## Introduction
+
+## Mapping
+
+Mapping refers to the application of a function to each element of a sequence to produce a new sequence.
+
+This can be done easily to a list with the function `mapcar`.
+Let us assume we have a function `double` which multiplies its argument by `2`:
+
+```lisp
+(mapcar #'double '(1 2 3 4)) ; => (2 4 6 8)
+```
+
+Notice that the first argument is a function to call. The `#'` is a special quoting syntax to specify a function.
+
+`double` was first called with the first element, then with the second, etc.
+The results were collected into a list which is the value the expression evaluates to.
+
+## Filtering
+
+Filtering is the process of creating a sequence from another sequence by copying all but certain elements from the original sequence.
+The choice of which items to include in the new sequence can be done by a predicate function (a function that evaluates to a boolean value), or by equality with a specific object.
+
+## Removing by a predicate
+
+`remove-if` is a function that takes a predicate function and a sequence as arguments, and returns a sequence of only those elements for which the predicate evaluated to a false value.
+In other words, it "removes" all elements of the sequence for which the predicate evaluates to true. However, note that this function does not modify the original sequence! 
+Instead, it returns a new sequence without the appropriate elements. If the predicate was true for all values then an empty sequence is returned.
+
+```lisp
+(remove-if #'evenp '(1 2 3 4 5)) ; => (1 3 5)
+(remove-if #'oddp '(1 3 5))      ; => ()
+```
+
+## Removing a specific item
+
+If one wants to remove a specific item from a sequence one can use `remove` which takes the item to remove and a sequence.
+All values in the sequence which are not equal to the item to remove are returned.
+NOTE: Equality is checked with the `eql` [generic equality predicate][concept-equality] by default.
+
+```lisp
+(remove 1 '(1 2 1 3 1 4)) ; => (2 3 4)
+(remove #\l "hello")      ; => "heo"
+```
+
+[concept-equality]: /tracks/common-lisp/concepts/equality
+
+## Instructions
+
+Lucy the Lisp Alien likes Numbers, they think some of them are "magnificent".
+
+They ask you to help them write functions to make numbers more magnificent.
+
+What Lucy thinks makes a number magnificent can change so the functions will need to be flexible.
+
+## 1. Make magnificent
+
+To make a list of numbers into a list of more magnificent numbers you'll need to write a function `make-magnificent-maybe` which takes a function to apply to the numbers and a list of numbers.
+It should evaluate to a list of numbers which are more magnificent (according to the function provided)
+
+```lisp
+(make-magnificent-maybe #'square '(1 2 3)) ; => (1 4 9)
+(make-magnificent-maybe #'1+ '(1 2 3))     ; => (2 3 4)
+```
+
+## 2. Only the best
+
+After (hopefully) making numbers more magnificent, Lucy wants to just see the numbers which are truly magnificent.
+
+They definitely know that 1 is *never* magnificent so you'll need to just remove that.
+
+But other than that Lucy changes their mind sometimes so again they'll give you a function which will tell you if a number is magnificent or not.
+
+You'll need to write a function `only-the-best` which takes a function and a list of numbers and returns only the best numbers (not `1` and not numbers that the function evaluates to true for).
+
+```lisp
+(only-the-best #'evenp '(1 2 3 4 5)) ; => (3 5)
+(only-the-best #'oddp '(1 3 5))    ; => ()
+```
+
+## Source
+
+### Created by
+
+- @verdammelt
