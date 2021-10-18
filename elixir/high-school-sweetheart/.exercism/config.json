@@ -1,0 +1,22 @@
+{
+  "blurb": "Learn about strings and the pipe operator by helping high school sweethearts profess their love on social media via ASCII art.",
+  "icon": "high-school-sweethearts",
+  "authors": [
+    "angelikatyborska"
+  ],
+  "contributors": [
+    "neenjaw"
+  ],
+  "files": {
+    "solution": [
+      "lib/high_school_sweetheart.ex"
+    ],
+    "test": [
+      "test/high_school_sweetheart_test.exs"
+    ],
+    "exemplar": [
+      ".meta/exemplar.ex"
+    ]
+  },
+  "language_versions": ">=1.10"
+}
