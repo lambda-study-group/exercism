@@ -1,17 +1,14 @@
-(ns triangle)
+(ns triangle
+  (:use [clojure.core]))
 
-(defn is-valid? [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn triangle? [x y z]
+  (let [sorted (vec (sort > [x y z]))]
+    (< (first sorted) (apply + (rest sorted)))))
 
-(defn equilateral? [] ;; <- arglist goes here
-  ;; your code goes here
-)
-
-(defn isosceles? [] ;; <- arglist goes here
-  ;; your code goes here
-)
-
-(defn scalene? [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn type [x y z]
+  (if (triangle? x y z)
+    (case (count (set [x y z]))
+      1 :equilateral
+      2 :isosceles
+      3 :scalene)
+    :illogical))
