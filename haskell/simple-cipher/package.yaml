@@ -1,0 +1,22 @@
+name: simple-cipher
+version: 1.2.0.5
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Cipher
+  source-dirs: src
+  ghc-options: -Wall
+  dependencies:
+    - random
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - simple-cipher
+      - hspec

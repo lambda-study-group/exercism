@@ -1,0 +1,21 @@
+name: exercism-clock
+version: 2.4.0.10
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Clock
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - exercism-clock
+      - hspec

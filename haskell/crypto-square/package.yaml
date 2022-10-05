@@ -1,0 +1,21 @@
+name: crypto-square
+version: 3.2.0.6
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: CryptoSquare
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - crypto-square
+      - hspec

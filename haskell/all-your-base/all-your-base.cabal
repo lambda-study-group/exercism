@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           all-your-base
+version:        2.3.0.8
+build-type:     Simple
+
+library
+  exposed-modules:
+      Base
+  other-modules:
+      Paths_all_your_base
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_all_your_base
+  hs-source-dirs:
+      test
+  build-depends:
+      all-your-base
+    , base
+    , hspec
+  default-language: Haskell2010
