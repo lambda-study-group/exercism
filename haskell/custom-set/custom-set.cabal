@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           custom-set
+version:        1.3.0.6
+build-type:     Simple
+
+library
+  exposed-modules:
+      CustomSet
+  other-modules:
+      Paths_custom_set
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , containers
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_custom_set
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , custom-set
+    , hspec
+  default-language: Haskell2010

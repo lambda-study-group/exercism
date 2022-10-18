@@ -1,0 +1,21 @@
+name: matching-brackets
+version: 2.0.0.8
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Brackets
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - matching-brackets
+      - hspec

@@ -1,0 +1,7 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "matching-brackets:lib"
+
+    - path: "./test"
+      component: "matching-brackets:test:test"
