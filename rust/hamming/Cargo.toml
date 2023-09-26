@@ -1,0 +1,4 @@
+[package]
+edition = "2021"
+name = "hamming"
+version = "2.2.0"
