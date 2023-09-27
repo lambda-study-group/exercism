@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "PaulT89"
+  ],
+  "contributors": [
+    "verdammelt"
+  ],
+  "files": {
+    "solution": [
+      "sum-of-multiples.lisp"
+    ],
+    "test": [
+      "sum-of-multiples-test.lisp"
+    ],
+    "example": [
+      ".meta/example.lisp"
+    ]
+  },
+  "blurb": "Given a number, find the sum of all the multiples of particular numbers up to but not including that number.",
+  "source": "A variation on Problem 1 at Project Euler",
+  "source_url": "https://projecteuler.net/problem=1"
+}

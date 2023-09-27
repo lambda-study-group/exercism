@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "PaulT89"
+  ],
+  "contributors": [
+    "verdammelt"
+  ],
+  "files": {
+    "solution": [
+      "matching-brackets.lisp"
+    ],
+    "test": [
+      "matching-brackets-test.lisp"
+    ],
+    "example": [
+      ".meta/example.lisp"
+    ]
+  },
+  "blurb": "Make sure the brackets and braces all match.",
+  "source": "Ginna Baker"
+}
